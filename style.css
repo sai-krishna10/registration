@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, blue, violet);
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title {
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.container {
+    height: 60vh;
+    width: 40vw;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container form {
+    margin-top: 45vh;
+}
+
+.container .div,
+.checkbox {
+    margin: 2vh;
+}
+
+.container .show-password {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.container .show-password input:hover {
+    cursor: pointer;
+}
+
+.container .show-password input {
+    height: 2vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.container .show-password .pwd-title {
+    font-size: 12px;
+}
+
+.container form button {
+    margin-left: 20vh;
+}
+
+.container .div .input-title {
+    font-weight: 550;
+}
+
+.container .div .input-title span {
+    font-size: 12px;
+
+}
+
+.container .div input,
+select {
+    height: 5vh;
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 2vh;
+}
+
+.container .checkbox {
+    display: flex;
+}
+
+.container .checkbox input:hover {
+    cursor: pointer;
+}
+
+.container .checkbox input {
+    margin-right: 2vh;
+}
+
+.container button {
+    height: 6vh;
+    width: 10vw;
+    background: linear-gradient(135deg, blue, violet);
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.container button:hover {
+    cursor: pointer;
+    background: linear-gradient(blue, violet);
+}
+
+@media only screen and (max-width:900px) {
+
+    .container {
+        height: 60vh;
+        width: 60vw;
+    }
+
+    .container .div input,
+    select {
+        height: 5vh;
+        width: 50vw;
+    }
+
+    .container form button {
+        margin-left: 25vh;
+        width: 15vw;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .container form button {
+        margin-left: 16vh;
+        width: 15vw;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .container form button {
+        margin-left: 12vh;
+        width: 25vw;
+    }
+
+    .container {
+        height: 60vh;
+        width: 80vw;
+    }
+
+    .container .div input,
+    select {
+        height: 5vh;
+        width: 70vw;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+}
